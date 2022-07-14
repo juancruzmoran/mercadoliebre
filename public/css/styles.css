@@ -1,0 +1,20 @@
+/* IMPORTACIONES */
+@import url('./home.css');
+
+/*  IMPORTACIONES - TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* VARIABLES */
+:root {
+--colorAmarillo: #EAC926;
+--colorAzul: #03264C;
+--colorCeleste: #1259c3;
+--colorGrisOscuro: #666;
+--colorGrisClaro: #ebebeb;
+--colorVerde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%
+}
