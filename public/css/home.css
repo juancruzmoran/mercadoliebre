@@ -35,12 +35,13 @@
     color: black;
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .home__header__nav ul {
     list-style: none;
-    display: inline-block;
     padding: 0%;
+    display: none;
 }
 p {
     font-family: 'Roboto';
@@ -78,14 +79,37 @@ font-size: 20px;
     border-top: 1px;
     height: 90%;
 }
+
 .home__main__section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 50px;
+    align-items: center;
+    width: 90%;
+}
+.home__price {
+    font-family: 'Roboto';
+    padding-left: 3px;
+}
+.home__discount {
+    color: var(--colorVerde);
+    padding-left: 2px;
 }
 
+.home__main i { 
+        color:var(--colorVerde);
+        border-radius: 50%;
+        border: 1px solid var(--colorVerde);
+        padding: 15px;
+        width: 25px;
+        height: 25px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+}
 .home__main__title h1 {
     font-size: 24px;
     font-family: 'Roboto';
@@ -93,23 +117,23 @@ font-size: 20px;
     justify-content: left;
     padding-left: 25px;
     margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--colorGrisOscuro);
     
 }
 
-.home__price {
-    font-size: 18px;
-}
-.home__discount {
-    font-size: 16px;
-    color: var(--colorVerde);
-}
 h4 {
     font-size: 24px;
     font-family: 'Roboto';
+    color: var(--colorGrisOscuro);
 }
-
-.home__price {
-
+.home__article-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: right;
+    border-top: 1px solid var(--colorGrisClaro);
+    width: 100%;
 }
 
 .home__article__cafetera {
@@ -179,6 +203,8 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    align-items: center;
+    width: 80%;
 }
 .home__footer li {
 list-style: none;
@@ -201,9 +227,11 @@ color: var(--colorGrisOscuro);
 }
 .copyright {
 display: flex;
-height: 60px;
-align-items: flex-end;
-
+flex-direction: row;
+justify-content: flex-end;
+margin-top: 30px;
+margin-right: 50%;  
+width: 100%;
 }
 .home__footer__icon {
     display: flex;
@@ -217,4 +245,33 @@ align-items: flex-end;
     padding-top: 1em;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+
+
+
+
+@media (min-width: 767px) {
+ /* HEADER */
+
+ .home__header__nav ul {
+    display: block;
+}
+.home__burger-menu {
+    display: none;
+}
+
+.home__article__cafetera {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.home__article__mackbook {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.home__article__samsung {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.home__article__smartv {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 }
