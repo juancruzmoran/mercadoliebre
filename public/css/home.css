@@ -1,26 +1,61 @@
-
 /* HEADER */
 .home__header {
     background-color: var(--colorAmarillo);
-    margin-bottom: 10px;
 }
 .home__button__search {
-    font-size: 15px;
-    margin: 0 0 10px 20px ;
-}
-.home__header__logo {
-    width: 45vw;
-    height: 30px;
-    margin-bottom: 10%;
-    margin-left: 25px;
-    padding: 5%;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.home__header__nav {
+    flex-direction: row;
     display: flex;
-    justify-content: left;
-    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.home__button__search img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+
+}
+.home__button {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+.home__header__logo{
+text-align: left;
+width: 100%;
+margin-bottom: 20x;
+margin-left: 15px;
+background-color: var(--colorAmarillo);
+}
+.home__header__logo img {
+    width: 50%;
+    height: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.home__header__banner {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+.home__header__banner img {
+    width: 100%;
+    height: 240;
+    justify-content: space-between;
+}
+.listado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+.home__header__nav{
+    display: none;
 }
 .home__header__nav ul li a{
     text-decoration: none;
@@ -41,7 +76,6 @@
 .home__header__nav ul {
     list-style: none;
     padding: 0%;
-    display: none;
 }
 p {
     font-family: 'Roboto';
@@ -61,14 +95,6 @@ border-radius: 11%;
 border: none;
 font-size: 20px;
 }
-.home__header__banner img {
-    width: 100vw;
-    height: 20vh;
-}
-.home__header__banner {
-    margin-bottom: -14px;
-    margin-top: 15px;
-}
 
 /* MAIN */
 .home__main {
@@ -79,24 +105,27 @@ font-size: 20px;
     border-top: 1px;
     height: 90%;
 }
-
+​
 .home__main__section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 90%;
 }
-.home__price {
-    font-family: 'Roboto';
-    padding-left: 3px;
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
-.home__discount {
-    color: var(--colorVerde);
-    padding-left: 2px;
-}
-
 .home__main i { 
         color:var(--colorVerde);
         border-radius: 50%;
@@ -110,157 +139,102 @@ font-size: 20px;
         margin-top: 5px;
         margin-bottom: 10px;
 }
-.home__main__title h1 {
+.home__main__title {
     font-size: 24px;
     font-family: 'Roboto';
     display: flex;
-    justify-content: left;
-    padding-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 10px;
     color: var(--colorGrisOscuro);
-    
+    padding-top: 20px;
+    padding-left: 20px
 }
-
-h4 {
-    font-size: 24px;
-    font-family: 'Roboto';
+.home__main__div--nombreProducto {
+    font-size: 12px;
     color: var(--colorGrisOscuro);
 }
+​
 .home__article-div {
-    display: flex;
+    position: relative;
+ display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: right;
     border-top: 1px solid var(--colorGrisClaro);
     width: 100%;
 }
-
-.home__article__cafetera {
-font-size: center;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-display: flex;
-margin: 10%;
-margin-bottom: 10px;
-padding-top: 0%;
-background-color: #fff;
-
+.home__price {
+    font-family: 'Roboto';
+    padding-left: 3px;
+    font-size: 18px;
 }
-
-.home__article__mackbook{
-    font-size: center;
+.home__discount {
+    font-family: 'Roboto';
+    color: var(--colorVerde);
+    padding-left: 50px;
+    font-size: 16px;
+}
+.home__article__product {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     display: flex;
     margin: 10%;
     margin-bottom: 10px;
     padding-top: 2%;
     background-color: #fff;
-}
-
-.home__article__samsung{
-    font-size: center;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    margin: 10%;
-    margin-bottom: 10px;
-    padding-top: 2%;
-    background-color: #fff;
-}
-
-.home__article__smartv {
-    font-size: center;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    margin: 10%;
-    margin-bottom: 10px;
-    padding-top: 2%;
-    background-color: #fff
+    width: 100;
 }
 .home__article__img {
-width: 55vw;
-height: 55vh;
+width: 100%;
+height: 100%;
+}
+.home__main__productname {
+    font-size: 12px;
+    color: var(--colorGrisOscuro);
 }
 
 
 /* FOOTER */
-h4 {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-}
-p {
-    font-size: 12px;
-}
-.home__footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    align-items: center;
-    width: 80%;
-}
-.home__footer li {
-list-style: none;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--colorGrisOscuro);
-}
-.home__footer_section {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-
-}
-.home__footer_section ul {
-    margin: 5px;
+.home__footer__div{
     text-align: center;
-    width: 282px;
+    padding-top: 25px;
 }
-.copyright {
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-margin-top: 30px;
-margin-right: 50%;  
-width: 100%;
-}
-.home__footer__icon {
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    margin-bottom: 10px;
-    
-}
-.home__footer__icon li {
-    color: var(--colorCeleste);
-    padding-top: 1em;
+.home__footer__div i{
+    color:var(--colorCeleste);
     font-size: 2em;
     margin-bottom: 10px;
 }
 
+.home__footer__div--titulo{
+    font-size: var(--textoSizeDescripciones);
+    color: var(--colorGrisOscuro);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
+.home__footer__div--parrafo{
+    font-size: var(--textoSizeCuerpo);
+    color: var(--colorGrisOscuro);
+    margin-top: 1px;
+    margin-bottom: 15px;
+}
+
+.home__footer__div--final{
+    font-size: var(--textoSizeCuerpo);
+    color: var(--colorGrisOscuro);
+    font-weight: 200;
+}
 
 
 
 
-@media (min-width: 767px) {
+/* @media (min-width: 767px) { */
  /* HEADER */
 
- .home__header__nav ul {
+ /* .home__header__nav ul {
     display: block;
 }
 .home__burger-menu {
     display: none;
 }
-
+​
 .home__article__cafetera {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
@@ -273,5 +247,96 @@ width: 100%;
 .home__article__smartv {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
+​
+}
+A */
+/* TELEFONO */
+@media (min-width:768px) {
+    /*Header*/
+    .home__header__nav {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .home__header__nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home__burger-menu{
+        display: none;
+    }
+    /*Main*/
+    .home__main__productname{
+        display: none;
+    }
+}
+/* TABLET*/ 
+@media (min-width:768px) {
+    /*Header*/
+      .home__burger-menu {
+        display: none;
+    }
+    .home__header__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .home__header__nav-ul{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .home__header__banner {
+        width: 100%;
+        height: 180px;
+    }
+    .home__header__banner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .home__main__article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+    .home__article__product {
+        width: 44%;
+        margin: 20px;
+    }
+    .home__main__section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+    .home__article-div{
+        display:flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        
+    }
+    
+}
+    /*DESKTOP*/
+    @media (min-width:1024px) {
+        .home__header--burger {
+            display: none;
+        }
+    
+    .home__article__product {
+        width: 20%;
+        margin: 20px;
+    }
+    .home__main__section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+    .home__article-div{
+        display:flex;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-right: 20px;
+    }
 }
