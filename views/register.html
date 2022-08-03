@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/e7049469c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="home__header">
+        <section>
+          <article class="home__button__search">
+              <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+              <input class="home__button" type="search" name="busquedaproducto" value="Buscar productos, marcas" >
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="home__header__compraencuotas">
+                <a href="/"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</a>
+              </div>
+          </article>
+        </section>
+        <nav class="home__header__nav">
+          <ul class="listado">
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+          <ul class="listado">
+            <li><a href="">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li> </i>
+            <li><a href="">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a> </i></li> 
+            <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li> 
+          </ul>
+        </nav>
+        <div class="home__burger-menu">
+          <button class="home__burger-button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="home__header__banner">
+          <img src="images/img-home-banner.jpg" alt="">
+        </div>
+      </header>
+
+    <main class="home_main_register">
+
+        <section class="register__main__section">
+            
+        
+            <h1 class="form__title">Registrate</h1>
+    
+    
+            <form action="/" class="form">
+    
+
+                
+            <div class="form_box">
+                <label class="form_label" for="nombre"></label>
+                <input class="form_input" type="text" id="nombre" name="Firtsname" value="Nombre y apellido">
+                <small class="form__text__error">El nombre es obligatorio</small>
+            </div>
+            <div class="form_box">
+                <label class="form_label" for="usuario"></label>
+                <input class="form_input" type="text" id="usuario" name="lastname" value="Nombre de usuario">
+                <small class="form__text__error">El nombre de usuario es obligatorio</small>
+            </div>
+            <div class="form_box">
+                <label class="form_label" for="email"></label>
+                <input class="form_input" type="email" id="e-mail" name="e-mail" value="E-mail">
+                <small class="form__text__error">Ingresar un correo electronico válido</small>
+            </div>
+
+            <div class="form_box">
+                <label class="form_label" for="date"> <h4>Fecha de nacimiento:</h4></label>
+                <input class="form_input form_date" type="date" id="date" name="birthday">
+                <small class="form__text__error">Debes ser mayor de edad</small>
+            </div>
+
+            <div class="form_box">
+                <label class="form_label" for="domicilio"></label>
+                <input class="form_input" type="text" id="domicilio" name="domicile" value="Domicilio">
+                <small class="form__text__error">Coloca tu domicilio</small>
+            </div>
+            <div class="form__subtittle">
+            <h4>Perfil de usuario</h4>
+            </div>
+            
+            <div class="form_box form_box_column">
+              
+                <label for="comprador"><input class="form__input--radio" value="comprador" type="radio" id="comprador" name="gender"> Comprador</label>
+                <label for="vendedor"><input class="form_input--radio" value="vendedor" type="radio" id="vendedor" name="gender"> Vendedor</label>
+                 
+            </div>
+                <h4 class="form__interest__tittle"> Intereses</h4>
+            <div class="form__interest">
+                <label for="Electro" class="label__perfil"> Electro</label>
+                <input type="radio" name="Electro" value="Electro">
+                <label for="Moda" class="label__perfil">Moda</label>
+                <input type="radio" name="Moda" value="Moda">
+                <label for="Hogar" class="label__perfil">Hogar</label>
+                <input type="radio" name="Hogar" value="Hogar">
+                <label for="Juguetería" class="label__perfil">Juguetería</label>
+                <input type="radio" name="Juguetería" value="Juguetería">
+                <label for="Vida Sana" class="label__perfil">Vida Sana</label>
+                <input type="radio" name="Vida sana" value="Vida sana">
+
+
+
+            </div>
+            <div class="form__avatar">
+                <h4 class="form__interest_tittle"> Avatar</h4>
+                <input type="file" name="avatar" accept=".jpg" class="form__avatar-input">
+                <small class="form__text__error">Selecciona una imagen de perfil</small>
+            </div>
+            <div class="form_box">
+                <label class="form_label" for="password"> <h4>Contraseña:</h4></label>
+                <input class="form_input" type="password" id="password" name="password">
+                <small class="form__text__error">La contraseña debe contener entre 6 y 12 caractéres</small>
+            </div>
+
+            <div class="form_box">
+                <label class="form_label" for="password2"><h4>Confirma contraseña:</h4></label>
+                <input class="form_input" type="password" id="password2">
+                <small class="form__text__error">Las contraseñas no coinciden</small>
+            
+            </div>
+
+
+            <div class="form_box">
+                <div class="form_box--flex">
+                    <button class="form__button" type="submit"><a href="/login">Envíar</a></button>
+                    <button class="form__button" type="reset">Limpiar campos</button>
+            </div>
+            </div>
+    
+                
+                    
+    
+            </form>
+         
+    </section>
+                
+        </main >
+
+    <footer></footer>
+
+</body>
+
+</html>

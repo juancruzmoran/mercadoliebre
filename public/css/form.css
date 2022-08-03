@@ -1,0 +1,186 @@
+/*general*/
+
+/*cajas*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-bottom: 20px;
+}
+.form__interest__tittle{
+display: flex;
+justify-content: center;
+width: 100%;
+padding: 0px;
+margin: 0px;
+height: 0px;
+}
+.form__interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 30px;
+    width: 100%;
+}
+.form__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.form__avatar-input{
+    padding-left: 30px;
+}
+.label__perfil {
+position: relative;
+left: 19px;
+top: 16px;
+text-align: start;
+}
+
+ 
+.form__title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.form__subtittle{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.form_box{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+.form_box_column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.form_input{
+    width:80%;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:10px;
+    padding: 10px;
+    border: 2px solid #a0a0a0;
+    border-bottom: 1px solid silver;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #a0a0a0;
+}
+
+.form_date {
+    color: black;
+}
+
+
+.register__main__section{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    background: var(--colorGrisClaro);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 2px solid 30%;
+    text-align: center;
+    font-family:'Roboto';
+    font-size: 16px ;
+}
+
+
+
+
+
+.form_select{
+    width:80%;
+    padding:10px 0;
+    border: 1px solid silver;
+    background-color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.form__text__error{
+    color: rgba(216, 13, 13, 0.733);
+    display: flex;
+    justify-content: start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+/*botones*/
+
+
+.form__button{
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    padding: 7px;
+    padding-left: 3px;
+    margin-top:21.7px;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+    background-color:   #0044AA;
+    cursor: pointer;
+    width:40%
+}
+
+
+@media(min-width:767px){
+
+
+.register__main__section{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+}
+
+@media(min-width:1024px){
+    
+    .form_box{
+        width:100%;
+    }
+
+    .register__main__section{
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+     
+
+
+   
+}
