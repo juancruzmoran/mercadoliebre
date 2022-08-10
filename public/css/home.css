@@ -113,19 +113,7 @@ font-size: 20px;
     justify-content: space-between;
     width: 90%;
 }
-.home__main i { 
-        color:var(--colorVerde);
-        border-radius: 50%;
-        border: 1px solid var(--colorVerde);
-        padding: 15px;
-        width: 25px;
-        height: 25px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5px;
-        margin-bottom: 10px;
-}
+
 main section article i{
     display: block;
     font-size: 16px;
@@ -138,6 +126,7 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    color:var(--colorVerde);
 }
 .home__main__title {
     font-size: 24px;
@@ -159,6 +148,13 @@ main section article i{
     justify-content: right;
     border-top: 1px solid var(--colorGrisClaro);
     width: 100%;
+}
+.home__price__discount {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: flex-start;
 }
 .home__price {
     font-family: 'Roboto';
@@ -264,10 +260,6 @@ A */
     .home__burger-menu{
         display: none;
     }
-    /*Main*/
-    .home__main__productname{
-        display: none;
-    }
 }
 /* TABLET*/ 
 @media (min-width:768px) {
@@ -323,7 +315,19 @@ A */
         .home__header--burger {
             display: none;
         }
-
+    .home__article__product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .home__article__product:hover h2 {
+        display: block;
+        font-size: 18px;
+     }
+    .home__main__productname {
+        display: none;
+    }
+    .home__main__productname:hover {
+        display: block;
+    }
     .home__article__product {
         width: 20%;
         margin: 20px;
@@ -339,5 +343,28 @@ A */
         justify-content: flex-end;
         gap: 30px;
         padding-right: 20px;
+    }
+    .home__main__title {
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+    .home__article__product:hover i {
+        transform: rotate(-90deg);
+        transition-duration: 300ms;
+    }
+    /* FOOTER */
+    .home__footer-article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .home__footer__div {
+        width: 33%;
+        padding-left: 10px;
+        margin-top: 4%;
+    }
+    .home__footer__div:hover i {
+        color: #b0c4df;
+        transform: rotate(-10deg);
     }
 }
